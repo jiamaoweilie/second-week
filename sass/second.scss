@@ -1,0 +1,133 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$border-color: #e0dbd3;
+
+body{
+  font-weight: 100;
+  font-family: sans-serif;
+}
+header {
+  line-height: 80px;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 80px;
+  border-bottom: 1px $border-color solid;
+  .header-left {
+    float: left;
+    width: 25%;
+    li {
+      text-align: center;
+      box-sizing: border-box;
+      &:first-child {
+        border-right: 1px $border-color solid;
+      }
+      display: inline-block;
+      font-size: 15px;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        border: 1px #e0dbd3 solid;
+        margin: 23px 10px;
+        color: #7f7e73;
+
+        &:hover{
+          background-color: #6d97c0;
+          color: white;
+        }
+      }
+      .icon-quill {
+        width: 40px;
+        height: 40px;
+        margin: 23px 20px;
+        background-color: #6d97c0;
+        color: white;
+      }
+      .icon-bell {
+        margin-left: 20px;
+      }
+    }
+  }
+  .header-center {
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    color: #6d97c0;
+  }
+  .header-right {
+    float: right;
+    width: 25%;
+    text-align: right;
+    input {
+      height: 40px;
+      width: 200px;
+      border-radius: 20px;
+      border: 1px $border-color solid;
+      margin: 20px 0px;
+      box-sizing: border-box;
+      position: relative;
+      padding-left: 12px;
+      font-size: 16px;
+    }
+    input:focus{
+      outline: 0;
+    }
+    form{
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .icon-search{
+      position: absolute;
+      font-size: 16px;
+      border: none;
+      background-color: transparent;
+      top: 30px;
+      right: 10px;
+    }
+    img {
+      width: 40px;
+      float: right;
+      border-radius: 50%;
+      margin: 20px 25px;
+    }
+  }
+}
+
+.personal-info{
+  width: 20%;
+  background-color: RGB(129, 169, 202);
+  float: left;
+  text-align: center;
+  color: white;
+  .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 55px auto 18px auto;
+  }
+
+  h2{
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  p{
+    padding: 0 5%;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+  .icon-chain{
+    text-decoration: none;
+    color: white;
+    &:before {
+      padding-right: 5px;
+    }
+  }
+}
