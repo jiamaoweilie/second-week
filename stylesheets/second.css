@@ -85,6 +85,9 @@ header {
   height: 80px;
   border-bottom: 1px #e0dbd3 solid;
   background-color: #FFFBF5;
+  -moz-box-shadow: 0px 5px #333333;
+  -webkit-box-shadow: 0px 5px #333333;
+  box-shadow: 0px 5px #333333;
 }
 /* line 46, ../sass/second.scss */
 header .header-left {
@@ -248,57 +251,55 @@ header .header-right img {
 }
 /* line 189, ../sass/second.scss */
 .personal-info .images {
-  width: 100%;
   overflow: hidden;
 }
-/* line 192, ../sass/second.scss */
+/* line 191, ../sass/second.scss */
 .personal-info .images li {
   display: inline-block;
   width: 33.33%;
   float: left;
 }
-/* line 196, ../sass/second.scss */
+/* line 195, ../sass/second.scss */
 .personal-info .images li image {
   width: 100%;
-  height: 100%;
   text-align: center;
 }
-/* line 204, ../sass/second.scss */
+/* line 202, ../sass/second.scss */
 .personal-info .activities {
   text-align: left;
   margin: 30px 0 10px 30px;
 }
-/* line 209, ../sass/second.scss */
+/* line 207, ../sass/second.scss */
 .personal-info .links {
   text-align: left;
   padding-left: 30px;
 }
-/* line 212, ../sass/second.scss */
+/* line 210, ../sass/second.scss */
 .personal-info .links li {
   font-size: 20px;
   margin-bottom: 5px;
   font-weight: lighter;
 }
-/* line 216, ../sass/second.scss */
+/* line 214, ../sass/second.scss */
 .personal-info .links li a {
   color: white;
   display: inline;
   text-decoration: none;
 }
-/* line 220, ../sass/second.scss */
+/* line 218, ../sass/second.scss */
 .personal-info .links li a:first-child {
   color: RGB(109, 148, 182);
 }
-/* line 224, ../sass/second.scss */
+/* line 222, ../sass/second.scss */
 .personal-info .links li a:last-child {
   border-bottom: 1px white solid;
 }
-/* line 228, ../sass/second.scss */
+/* line 226, ../sass/second.scss */
 .personal-info .links li a::before {
   padding-right: 10px;
 }
 
-/* line 236, ../sass/second.scss */
+/* line 234, ../sass/second.scss */
 .posts-info {
   float: left;
   width: 60%;
@@ -307,7 +308,7 @@ header .header-right img {
   overflow: hidden;
   padding: 40px 40px 40px 40px;
 }
-/* line 243, ../sass/second.scss */
+/* line 241, ../sass/second.scss */
 .posts-info ul {
   height: 80px;
   overflow: hidden;
@@ -315,7 +316,7 @@ header .header-right img {
   background-color: #FFFBF5;
   width: 100%;
 }
-/* line 249, ../sass/second.scss */
+/* line 247, ../sass/second.scss */
 .posts-info ul li {
   width: 25%;
   float: left;
@@ -325,19 +326,19 @@ header .header-right img {
   height: 80px;
   padding: 20px 0;
 }
-/* line 257, ../sass/second.scss */
+/* line 255, ../sass/second.scss */
 .posts-info ul li span {
   display: inline-table;
   width: 100%;
   vertical-align: bottom;
 }
-/* line 262, ../sass/second.scss */
+/* line 260, ../sass/second.scss */
 .posts-info ul li span:first-child {
   color: #C6C1B0;
   font-weight: lighter;
   margin-bottom: 10px;
 }
-/* line 267, ../sass/second.scss */
+/* line 265, ../sass/second.scss */
 .posts-info ul li span:last-child {
   font-weight: bolder;
 }
@@ -361,7 +362,7 @@ header .header-right img {
   top: 75px;
   left: 0;
 }
-/* line 276, ../sass/second.scss */
+/* line 274, ../sass/second.scss */
 .posts-info .posts {
   margin-top: 30px;
   text-align: left;
@@ -369,70 +370,70 @@ header .header-right img {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-/* line 282, ../sass/second.scss */
+/* line 280, ../sass/second.scss */
 .posts-info .posts .post {
   position: relative;
   background-color: #FFFBF5;
   border-bottom: 1px #F2EEE8 solid;
   padding: 30px;
 }
-/* line 287, ../sass/second.scss */
+/* line 285, ../sass/second.scss */
 .posts-info .posts .post .post-avatar {
   width: 40px;
   height: 40px;
   position: absolute;
   border-radius: 50%;
 }
-/* line 293, ../sass/second.scss */
+/* line 291, ../sass/second.scss */
 .posts-info .posts .post .detail {
   padding-left: 70px;
 }
-/* line 295, ../sass/second.scss */
+/* line 293, ../sass/second.scss */
 .posts-info .posts .post .detail h2 {
   float: left;
 }
-/* line 297, ../sass/second.scss */
+/* line 295, ../sass/second.scss */
 .posts-info .posts .post .detail h2.account {
   font-weight: lighter;
   color: #C6C1B0;
   margin-left: 5px;
 }
-/* line 302, ../sass/second.scss */
+/* line 300, ../sass/second.scss */
 .posts-info .posts .post .detail h2.time {
   float: right;
   font-weight: lighter;
   color: #C6C1B0;
 }
-/* line 308, ../sass/second.scss */
+/* line 306, ../sass/second.scss */
 .posts-info .posts .post .detail p {
   padding-top: 10px;
   line-height: 1.2;
   font-weight: lighter;
   clear: both;
 }
-/* line 315, ../sass/second.scss */
+/* line 313, ../sass/second.scss */
 .posts-info .posts .post .detail .post-image {
   padding-top: 10px;
   width: 100%;
   clear: both;
 }
-/* line 321, ../sass/second.scss */
+/* line 319, ../sass/second.scss */
 .posts-info .posts .post .detail .icons {
   margin-top: 15px;
   font-size: 20px;
   color: #C6C1B0;
 }
-/* line 325, ../sass/second.scss */
+/* line 323, ../sass/second.scss */
 .posts-info .posts .post .detail .icons i {
   margin-right: 10px;
 }
-/* line 328, ../sass/second.scss */
+/* line 326, ../sass/second.scss */
 .posts-info .posts .post .detail .icons i:last-child {
   float: right;
   margin-right: 0;
 }
 
-/* line 339, ../sass/second.scss */
+/* line 337, ../sass/second.scss */
 .friend-info {
   float: left;
   width: 20%;
@@ -441,62 +442,62 @@ header .header-right img {
   font-weight: lighter;
   height: 1200px;
 }
-/* line 346, ../sass/second.scss */
+/* line 344, ../sass/second.scss */
 .friend-info section {
   margin-left: 35px;
 }
-/* line 348, ../sass/second.scss */
+/* line 346, ../sass/second.scss */
 .friend-info section.philippines-trends {
   margin: 40px auto 50px 35px;
   line-height: 1.5;
 }
-/* line 351, ../sass/second.scss */
+/* line 349, ../sass/second.scss */
 .friend-info section.philippines-trends h2:first-child {
   color: #58575F;
   margin-bottom: 10px;
 }
-/* line 355, ../sass/second.scss */
+/* line 353, ../sass/second.scss */
 .friend-info section.philippines-trends a {
   text-decoration: none;
   display: block;
   color: RGB(129, 169, 202);
 }
-/* line 362, ../sass/second.scss */
+/* line 360, ../sass/second.scss */
 .friend-info section.who-to-follow {
   padding-right: 50px;
 }
-/* line 364, ../sass/second.scss */
+/* line 362, ../sass/second.scss */
 .friend-info section.who-to-follow .title {
   float: left;
 }
-/* line 367, ../sass/second.scss */
+/* line 365, ../sass/second.scss */
 .friend-info section.who-to-follow .more {
   float: right;
   color: RGB(129, 169, 202);
   text-decoration: none;
 }
-/* line 373, ../sass/second.scss */
+/* line 371, ../sass/second.scss */
 .friend-info section.who-to-follow .people {
   clear: both;
   padding-top: 15px;
   position: relative;
 }
-/* line 378, ../sass/second.scss */
+/* line 376, ../sass/second.scss */
 .friend-info section.who-to-follow .people .avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   position: absolute;
 }
-/* line 385, ../sass/second.scss */
+/* line 383, ../sass/second.scss */
 .friend-info section.who-to-follow .people div {
   margin-left: 60px;
 }
-/* line 387, ../sass/second.scss */
+/* line 385, ../sass/second.scss */
 .friend-info section.who-to-follow .people div .name {
   float: left;
 }
-/* line 391, ../sass/second.scss */
+/* line 389, ../sass/second.scss */
 .friend-info section.who-to-follow .people div .icon-plus {
   float: right;
   border: 1px #e0dbd3 solid;
@@ -509,7 +510,7 @@ header .header-right img {
   line-height: 20px;
   text-decoration: none;
 }
-/* line 404, ../sass/second.scss */
+/* line 402, ../sass/second.scss */
 .friend-info section.who-to-follow .people div .introduction {
   clear: both;
   padding-top: 5px;
