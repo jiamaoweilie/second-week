@@ -30,6 +30,7 @@ body {
   text-align: center;
   color: $text-color;
   background-color: $body-color;
+  height: 100%;
 }
 
 header {
@@ -228,7 +229,7 @@ header {
   box-sizing: border-box;
   background: RGB(242, 238, 232);
   overflow: hidden;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   ul {
     height: 80px;
     overflow: hidden;
