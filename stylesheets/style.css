@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-f59hvx');
-	src:url('fonts/icomoon.eot?#iefix-f59hvx') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-f59hvx') format('woff'),
-		url('fonts/icomoon.ttf?-f59hvx') format('truetype'),
-		url('fonts/icomoon.svg?-f59hvx#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?6jgebx');
+	src:url('fonts/icomoon.eot?#iefix6jgebx') format('embedded-opentype'),
+		url('fonts/icomoon.woff?6jgebx') format('woff'),
+		url('fonts/icomoon.ttf?6jgebx') format('truetype'),
+		url('fonts/icomoon.svg?6jgebx#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,17 +23,14 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-resize-enlarge:before {
+	content: "\e60a";
+}
 .icon-ellipsis:before {
 	content: "\e129";
 }
-.icon-chain:before {
-	content: "\e606";
-}
-.icon-search:before {
-	content: "\e605";
-}
-.icon-mail:before {
-	content: "\e600";
+.icon-fullscreen-alt:before {
+	content: "\e609";
 }
 .icon-star:before {
 	content: "\f02a";
@@ -58,4 +55,13 @@
 }
 .icon-forward:before {
 	content: "\e608";
+}
+.icon-chain:before {
+	content: "\e606";
+}
+.icon-search:before {
+	content: "\e605";
+}
+.icon-mail:before {
+	content: "\e600";
 }

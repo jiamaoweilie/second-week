@@ -63,81 +63,93 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/second.scss */
-body {
-  font-weight: 100;
-  font-family: sans-serif;
+/* line 12, ../sass/second.scss */
+h2 {
+  font-size: 15px;
 }
 
-/* line 10, ../sass/second.scss */
+/* line 28, ../sass/second.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #58575F;
+  background-color: #F2EEE8;
+}
+
+/* line 35, ../sass/second.scss */
 header {
   line-height: 80px;
   overflow: hidden;
   box-sizing: border-box;
   height: 80px;
   border-bottom: 1px #e0dbd3 solid;
+  background-color: #FFFBF5;
 }
-/* line 16, ../sass/second.scss */
+/* line 42, ../sass/second.scss */
 header .header-left {
+  height: 80px;
   float: left;
   width: 25%;
+  text-align: left;
 }
-/* line 19, ../sass/second.scss */
+/* line 47, ../sass/second.scss */
 header .header-left li {
+  height: 80px;
   text-align: center;
   box-sizing: border-box;
   display: inline-block;
   font-size: 15px;
 }
-/* line 22, ../sass/second.scss */
+/* line 51, ../sass/second.scss */
 header .header-left li:first-child {
   border-right: 1px #e0dbd3 solid;
 }
-/* line 27, ../sass/second.scss */
+/* line 56, ../sass/second.scss */
 header .header-left li a {
   text-decoration: none;
   display: inline-block;
+  box-sizing: border-box;
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
   border: 1px #e0dbd3 solid;
-  margin: 23px 10px;
+  margin: 20px 10px;
   color: #7f7e73;
 }
-/* line 38, ../sass/second.scss */
+/* line 68, ../sass/second.scss */
 header .header-left li a:hover {
-  background-color: #6d97c0;
+  background-color: RGB(129, 169, 202);
   color: white;
 }
-/* line 43, ../sass/second.scss */
+/* line 73, ../sass/second.scss */
 header .header-left li .icon-quill {
   width: 40px;
   height: 40px;
   margin: 23px 20px;
-  background-color: #6d97c0;
+  background-color: RGB(129, 169, 202);
   color: white;
 }
-/* line 50, ../sass/second.scss */
+/* line 80, ../sass/second.scss */
 header .header-left li .icon-bell {
   margin-left: 20px;
 }
-/* line 55, ../sass/second.scss */
+/* line 85, ../sass/second.scss */
 header .header-center {
   width: 50%;
   float: left;
   text-align: center;
   line-height: 80px;
   font-size: 40px;
-  color: #6d97c0;
+  color: RGB(129, 169, 202);
 }
-/* line 63, ../sass/second.scss */
+/* line 93, ../sass/second.scss */
 header .header-right {
   float: right;
   width: 25%;
   text-align: right;
 }
-/* line 67, ../sass/second.scss */
+/* line 97, ../sass/second.scss */
 header .header-right input {
   height: 40px;
   width: 200px;
@@ -149,17 +161,17 @@ header .header-right input {
   padding-left: 12px;
   font-size: 16px;
 }
-/* line 78, ../sass/second.scss */
+/* line 108, ../sass/second.scss */
 header .header-right input:focus {
   outline: 0;
 }
-/* line 81, ../sass/second.scss */
+/* line 111, ../sass/second.scss */
 header .header-right form {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-/* line 86, ../sass/second.scss */
+/* line 116, ../sass/second.scss */
 header .header-right .icon-search {
   position: absolute;
   font-size: 16px;
@@ -168,7 +180,7 @@ header .header-right .icon-search {
   top: 30px;
   right: 10px;
 }
-/* line 94, ../sass/second.scss */
+/* line 124, ../sass/second.scss */
 header .header-right img {
   width: 40px;
   float: right;
@@ -176,39 +188,315 @@ header .header-right img {
   margin: 20px 25px;
 }
 
-/* line 103, ../sass/second.scss */
+/* line 133, ../sass/second.scss */
 .personal-info {
   width: 20%;
   background-color: RGB(129, 169, 202);
   float: left;
   text-align: center;
   color: white;
+  height: 1200px;
 }
-/* line 109, ../sass/second.scss */
+/* line 140, ../sass/second.scss */
 .personal-info .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin: 55px auto 18px auto;
 }
-/* line 116, ../sass/second.scss */
+/* line 147, ../sass/second.scss */
 .personal-info h2 {
   font-size: 15px;
   margin-bottom: 12px;
 }
-/* line 120, ../sass/second.scss */
+/* line 151, ../sass/second.scss */
 .personal-info p {
   padding: 0 5%;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
-/* line 126, ../sass/second.scss */
+/* line 157, ../sass/second.scss */
 .personal-info .icon-chain {
   text-decoration: none;
   color: white;
 }
-/* line 129, ../sass/second.scss */
+/* line 160, ../sass/second.scss */
 .personal-info .icon-chain:before {
   padding-right: 5px;
+}
+/* line 165, ../sass/second.scss */
+.personal-info a {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+/* line 171, ../sass/second.scss */
+.personal-info button {
+  width: 160px;
+  height: 40px;
+  background-color: RGB(109, 148, 182);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0;
+  margin-bottom: 40px;
+}
+/* line 184, ../sass/second.scss */
+.personal-info div {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 187, ../sass/second.scss */
+.personal-info div img {
+  width: 33.33%;
+  height: 141px;
+  float: left;
+}
+/* line 194, ../sass/second.scss */
+.personal-info .activities {
+  text-align: left;
+  margin: 30px 0 10px 30px;
+}
+/* line 199, ../sass/second.scss */
+.personal-info ul {
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 100px;
+}
+/* line 203, ../sass/second.scss */
+.personal-info ul li {
+  margin-bottom: 5px;
+}
+/* line 205, ../sass/second.scss */
+.personal-info ul li a {
+  color: white;
+  display: inline;
+  text-decoration: none;
+}
+/* line 209, ../sass/second.scss */
+.personal-info ul li a:first-child {
+  color: RGB(109, 148, 182);
+}
+/* line 213, ../sass/second.scss */
+.personal-info ul li a:last-child {
+  border-bottom: 1px white solid;
+}
+/* line 217, ../sass/second.scss */
+.personal-info ul li a::before {
+  padding-right: 10px;
+}
+
+/* line 225, ../sass/second.scss */
+.posts-info {
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+  background: RGB(242, 238, 232);
+  overflow: hidden;
+  padding: 40px;
+}
+/* line 232, ../sass/second.scss */
+.posts-info ul {
+  height: 80px;
+  overflow: hidden;
+  display: block;
+  background-color: #FFFBF5;
+  width: 100%;
+}
+/* line 238, ../sass/second.scss */
+.posts-info ul li {
+  width: 25%;
+  float: left;
+  display: inline-table;
+  position: relative;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 20px 0;
+}
+/* line 246, ../sass/second.scss */
+.posts-info ul li span {
+  display: inline-table;
+  width: 100%;
+  vertical-align: bottom;
+}
+/* line 251, ../sass/second.scss */
+.posts-info ul li span:first-child {
+  color: #C6C1B0;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+/* line 256, ../sass/second.scss */
+.posts-info ul li span:last-child {
+  font-weight: bolder;
+}
+/* line 17, ../sass/second.scss */
+.posts-info ul li:first-child::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: RGB(129, 169, 202);
+  top: 75px;
+  left: 0;
+}
+/* line 17, ../sass/second.scss */
+.posts-info ul li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: RGB(129, 169, 202);
+  top: 75px;
+  left: 0;
+}
+/* line 265, ../sass/second.scss */
+.posts-info .posts {
+  margin-top: 30px;
+  text-align: left;
+  height: 1050px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/* line 271, ../sass/second.scss */
+.posts-info .posts .post {
+  position: relative;
+  background-color: #FFFBF5;
+  border-bottom: 1px #F2EEE8 solid;
+  padding: 30px;
+}
+/* line 276, ../sass/second.scss */
+.posts-info .posts .post .post-avatar {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+}
+/* line 282, ../sass/second.scss */
+.posts-info .posts .post .detail {
+  padding-left: 70px;
+}
+/* line 284, ../sass/second.scss */
+.posts-info .posts .post .detail h2 {
+  float: left;
+}
+/* line 286, ../sass/second.scss */
+.posts-info .posts .post .detail h2.account {
+  font-weight: lighter;
+  color: #C6C1B0;
+  margin-left: 5px;
+}
+/* line 291, ../sass/second.scss */
+.posts-info .posts .post .detail h2.time {
+  float: right;
+  font-weight: lighter;
+  color: #C6C1B0;
+}
+/* line 297, ../sass/second.scss */
+.posts-info .posts .post .detail p {
+  padding-top: 10px;
+  line-height: 1.2;
+  font-weight: lighter;
+  clear: both;
+}
+/* line 304, ../sass/second.scss */
+.posts-info .posts .post .detail .post-image {
+  padding-top: 10px;
+  width: 100%;
+  clear: both;
+}
+/* line 310, ../sass/second.scss */
+.posts-info .posts .post .detail .icons {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #C6C1B0;
+}
+/* line 314, ../sass/second.scss */
+.posts-info .posts .post .detail .icons i {
+  margin-right: 10px;
+}
+/* line 317, ../sass/second.scss */
+.posts-info .posts .post .detail .icons i:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 328, ../sass/second.scss */
+.friend-info {
+  float: left;
+  width: 20%;
+  text-align: left;
+  background-color: #FFFBF5;
+  font-weight: lighter;
+  height: 1200px;
+}
+/* line 335, ../sass/second.scss */
+.friend-info section {
+  margin-left: 35px;
+}
+/* line 337, ../sass/second.scss */
+.friend-info section.philippines-trends {
+  margin: 40px auto 50px 35px;
+  color: RGB(129, 169, 202);
+  line-height: 1.5;
+}
+/* line 341, ../sass/second.scss */
+.friend-info section.philippines-trends h2:first-child {
+  color: #58575F;
+  margin-bottom: 10px;
+}
+/* line 347, ../sass/second.scss */
+.friend-info section.who-to-follow {
+  padding-right: 50px;
+}
+/* line 349, ../sass/second.scss */
+.friend-info section.who-to-follow .title {
+  float: left;
+}
+/* line 352, ../sass/second.scss */
+.friend-info section.who-to-follow span {
+  float: right;
+  color: RGB(129, 169, 202);
+}
+/* line 357, ../sass/second.scss */
+.friend-info section.who-to-follow .people {
+  clear: both;
+  padding-top: 15px;
+  position: relative;
+}
+/* line 362, ../sass/second.scss */
+.friend-info section.who-to-follow .people .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+/* line 369, ../sass/second.scss */
+.friend-info section.who-to-follow .people div {
+  margin-left: 60px;
+}
+/* line 371, ../sass/second.scss */
+.friend-info section.who-to-follow .people div .name {
+  float: left;
+}
+/* line 375, ../sass/second.scss */
+.friend-info section.who-to-follow .people div i {
+  float: right;
+  border: 1px #e0dbd3 solid;
+  color: #C6C1B0;
+  display: block;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+}
+/* line 387, ../sass/second.scss */
+.friend-info section.who-to-follow .people div .introduction {
+  clear: both;
+  padding-top: 5px;
+  color: #C6C1B0;
+  margin-bottom: 15px;
 }

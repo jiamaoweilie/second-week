@@ -1,22 +1,51 @@
 @import "compass/reset";
 @import "compass/css3";
 
+$blue-dark: RGB(109, 148, 182);
 $border-color: #e0dbd3;
+$text-color: #58575F;
+$body-color: #F2EEE8;
+$post-bg-color: #FFFBF5;
+$gray-text-color: #C6C1B0;
+$blue-background: RGB(129, 169, 202);
 
-body{
-  font-weight: 100;
-  font-family: sans-serif;
+h2{
+  font-size: 15px;
 }
+
+@mixin form-decoration($selector) {
+  #{$selector}::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: $blue-background;
+    top: 75px;
+    left: 0;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: $text-color;
+  background-color: $body-color;
+}
+
 header {
   line-height: 80px;
   overflow: hidden;
   box-sizing: border-box;
   height: 80px;
   border-bottom: 1px $border-color solid;
+  background-color: $post-bg-color;
   .header-left {
+    height: 80px;
     float: left;
     width: 25%;
+    text-align: left;
     li {
+      height: 80px;
       text-align: center;
       box-sizing: border-box;
       &:first-child {
@@ -27,16 +56,17 @@ header {
       a {
         text-decoration: none;
         display: inline-block;
+        box-sizing: border-box;
         width: 40px;
         height: 40px;
         line-height: 40px;
         border-radius: 50%;
         border: 1px #e0dbd3 solid;
-        margin: 23px 10px;
+        margin: 20px 10px;
         color: #7f7e73;
 
-        &:hover{
-          background-color: #6d97c0;
+        &:hover {
+          background-color: $blue-background;
           color: white;
         }
       }
@@ -44,7 +74,7 @@ header {
         width: 40px;
         height: 40px;
         margin: 23px 20px;
-        background-color: #6d97c0;
+        background-color: $blue-background;
         color: white;
       }
       .icon-bell {
@@ -58,7 +88,7 @@ header {
     text-align: center;
     line-height: 80px;
     font-size: 40px;
-    color: #6d97c0;
+    color: $blue-background;
   }
   .header-right {
     float: right;
@@ -75,15 +105,15 @@ header {
       padding-left: 12px;
       font-size: 16px;
     }
-    input:focus{
+    input:focus {
       outline: 0;
     }
-    form{
+    form {
       position: relative;
       display: inline-block;
       overflow: hidden;
     }
-    .icon-search{
+    .icon-search {
       position: absolute;
       font-size: 16px;
       border: none;
@@ -100,34 +130,268 @@ header {
   }
 }
 
-.personal-info{
+.personal-info {
   width: 20%;
-  background-color: RGB(129, 169, 202);
+  background-color: $blue-background;
   float: left;
   text-align: center;
   color: white;
-  .avatar{
+  height: 1200px;
+  .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: 55px auto 18px auto;
   }
 
-  h2{
+  h2 {
     font-size: 15px;
     margin-bottom: 12px;
   }
-  p{
+  p {
     padding: 0 5%;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
-  .icon-chain{
+  .icon-chain {
     text-decoration: none;
     color: white;
     &:before {
       padding-right: 5px;
+    }
+  }
+
+  a {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    background-color: $blue-dark;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  div {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 33.33%;
+      height: 141px;
+      float: left;
+    }
+  }
+
+  .activities {
+    text-align: left;
+    margin: 30px 0 10px 30px;
+  }
+
+  ul {
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 100px;
+    li {
+      margin-bottom: 5px;
+      a {
+        color: white;
+        display: inline;
+        text-decoration: none;
+        &:first-child {
+          color: $blue-dark;
+        }
+
+        &:last-child {
+          border-bottom: 1px white solid;
+        }
+
+        &::before {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.posts-info {
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+  background: RGB(242, 238, 232);
+  overflow: hidden;
+  padding: 40px;
+  ul {
+    height: 80px;
+    overflow: hidden;
+    display: block;
+    background-color: $post-bg-color;
+    width: 100%;
+    li {
+      width: 25%;
+      float: left;
+      display: inline-table;
+      position: relative;
+      box-sizing: border-box;
+      height: 80px;
+      padding: 20px 0;
+      span {
+        display: inline-table;
+        width: 100%;
+        vertical-align: bottom;
+      }
+      span:first-child {
+        color: $gray-text-color;
+        font-weight: lighter;
+        margin-bottom: 10px;
+      }
+      span:last-child {
+        font-weight: bolder;
+      }
+
+      @include form-decoration("&:first-child");
+      @include form-decoration("&:hover");
+    }
+  }
+
+  .posts {
+    margin-top: 30px;
+    text-align: left;
+    height: 1050px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .post {
+      position: relative;
+      background-color: $post-bg-color;
+      border-bottom: 1px $body-color solid;
+      padding: 30px;
+      .post-avatar {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .detail {
+        padding-left: 70px;
+        h2{
+          float: left;
+          &.account{
+            font-weight: lighter;
+            color: $gray-text-color;
+            margin-left: 5px;
+          }
+          &.time{
+            float: right;
+            font-weight: lighter;
+            color: $gray-text-color;
+          }
+        }
+        p{
+          padding-top: 10px;
+          line-height: 1.2;
+          font-weight: lighter;
+          clear: both;
+        }
+
+        .post-image{
+          padding-top: 10px;
+          width: 100%;
+          clear: both;
+        }
+
+        .icons{
+          margin-top: 15px;
+          font-size: 20px;
+          color: $gray-text-color;
+          i {
+            margin-right: 10px;
+
+            &:last-child {
+              float: right;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.friend-info {
+  float: left;
+  width: 20%;
+  text-align: left;
+  background-color: $post-bg-color;
+  font-weight: lighter;
+  height: 1200px;
+  section{
+    margin-left: 35px;
+    &.philippines-trends{
+      margin: 40px auto 50px 35px;
+      color: $blue-background;
+      line-height: 1.5;
+      h2:first-child{
+        color: $text-color;
+        margin-bottom: 10px;
+      }
+    }
+
+    &.who-to-follow{
+      padding-right: 50px;
+      .title{
+        float: left;
+      }
+      span{
+        float: right;
+        color: $blue-background;
+      }
+
+      .people{
+        clear: both;
+        padding-top: 15px;
+        position: relative;
+
+        .avatar{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          position: absolute;
+        }
+
+        div{
+          margin-left: 60px;
+          .name{
+            float: left;
+          }
+
+          i{
+            float: right;
+            border: 1px $border-color solid;
+            color: $gray-text-color;
+            display: block;
+            font-size: 10px;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+          }
+
+          .introduction{
+            clear: both;
+            padding-top: 5px;
+            color: $gray-text-color;
+            margin-bottom: 15px;
+          }
+        }
+      }
     }
   }
 }
