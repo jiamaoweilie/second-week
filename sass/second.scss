@@ -266,7 +266,7 @@ header {
         font-weight: bolder;
       }
 
-//      @include form-decoration("&:first-child");
+      @include form-decoration("&:first-child");
       @include form-decoration("&:hover");
     }
   }

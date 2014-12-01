@@ -343,6 +343,16 @@ header .header-right img {
   font-weight: bolder;
 }
 /* line 18, ../sass/second.scss */
+.posts-info ul li:first-child::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: RGB(129, 169, 202);
+  top: 75px;
+  left: 0;
+}
+/* line 18, ../sass/second.scss */
 .posts-info ul li:hover::after {
   content: "";
   position: absolute;
